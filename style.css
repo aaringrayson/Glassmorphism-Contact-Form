@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#ffbd99;
+    background-image:
+    radial-gradient(at 8% 21%, hsla(261,77%,64%,1) 0px, transparent 50%),
+    radial-gradient(at 42% 84%, hsla(186,84%,60%,1) 0px, transparent 50%),
+    radial-gradient(at 57% 71%, hsla(271,68%,65%,1) 0px, transparent 50%),
+    radial-gradient(at 59% 52%, hsla(31,70%,73%,1) 0px, transparent 50%),
+    radial-gradient(at 57% 30%, hsla(121,75%,73%,1) 0px, transparent 50%),
+    radial-gradient(at 71% 98%, hsla(222,95%,63%,1) 0px, transparent 50%),
+    radial-gradient(at 72% 21%, hsla(102,91%,76%,1) 0px, transparent 50%);
+}
+
+/* ---- FORM DESIGN ---- */
+form {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 48px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: 0 8px 48px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+
+}
+
+.container {
+    width: 100%;
+    padding: 0 24px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input,textarea {
+    padding: 8px;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+.button {
+    background-color: #fff;
+    color: #333;
+    padding: 16px;
+    font-weight: 600;
+    transition: all 500ms ease-in-out;
+}
+
+.button:hover, .button:focus {
+    background: #333;
+    color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    form {
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    form {
+        padding: 24px;
+    }
+}
